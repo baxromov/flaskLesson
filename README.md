@@ -5,6 +5,13 @@ First you should clone the project
 ```bash
 git clone https://github.com/baxromov/flaskLesson.git
 ```
+Enter the folder
+
+
+```bash
+cd flaskLesson
+```
+
 
 Create venv
 ```bash
