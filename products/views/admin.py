@@ -1,0 +1,2 @@
+def admin():
+    return "Admin"

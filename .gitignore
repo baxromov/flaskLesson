@@ -1,0 +1,6 @@
+venv
+instance
+*.sqlite3
+*.pyc
+*.env
+.idea
