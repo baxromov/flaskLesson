@@ -21,5 +21,7 @@ def paginator(**_kwargs):
 
 
 """
-select * from product limit 10 offset 50
+select * from product limit 3 offset 6
+
+1 2 3 4 5 6 7 8 9 10
 """
