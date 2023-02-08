@@ -1,12 +1,15 @@
+from werkzeug import Response
+
 from main import model
 from products.models.products import Product
 from flask import jsonify, request
 import json
 
-from products.serializers.products import product_serializer
+from products.serializers.products import product_serializer, paginator
 
 
-def product():
+@paginator(limit=3)
+def product(q=request):
     query = Product.query.all()
     serializer = product_serializer(query)
     return jsonify(serializer)
@@ -20,7 +23,7 @@ def product_detail(name):
     return "Product %s" % name
 
 
-def product_create():
+def product_create(request=request):
     """
     Products View
     :return: str
